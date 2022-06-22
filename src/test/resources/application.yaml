@@ -1,0 +1,34 @@
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+      generate-ddl: true
+  #    properties:
+  #        hibernate:
+  #          dialect: com.x.data.core.hibernate.dialect.ExtendedH2Dialect
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/braintree
+    username: root
+    password: password
+
+
+server:
+  port: 8081
+
+
+braintree:
+  gateway:
+    environment: sandbox
+    merchant-id: psbgxppgzh88j6tp
+    public-key:  7snrhvgj4kbzwg5w
+    private-key: 2668adf35fe5f3673eecdd2bf9bf621a
+
+#    environment: sandbox
+#    merchant-id: p7qgftj5zrpyvb2n
+#    public-key: sydqdwbj66x69p5p
+#    private-key: b3eadb4e6726667ec6cc6ae7cb5ed74b
+
+
+
+
