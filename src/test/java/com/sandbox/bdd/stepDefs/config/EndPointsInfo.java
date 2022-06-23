@@ -6,9 +6,6 @@ import org.springframework.stereotype.Component;
 
 
 @Component
-@PropertySource("/Users/khanabdulshariff/Downloads/BraintreeSandBox/src/test/resources/request/AddCustomer.json")
-//@PropertySource("/Users/khanabdulshariff/Downloads/BraintreeSandBox/src/test/resources/request/ChargeTransaction.json")
-//@PropertySource("/Users/khanabdulshariff/Downloads/BraintreeSandBox/src/test/resources/request/test.json")
 @ConfigurationProperties(prefix = "braintree")
 @SuppressWarnings("unused")
 public class EndPointsInfo {
